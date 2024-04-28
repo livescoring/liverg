@@ -8,6 +8,14 @@ package com.bean;
  *
  * @author USER
  */
-public class test {
+public class Gymnast {
+    
+    int gymnastID,staffID,teamID;
+    String gymnastIC,gymnastICPic,gymnastName,gymnastCategory;
+
+    public Gymnast(String gymnastName) {
+        this.gymnastName = gymnastName;
+    }
+    
     
 }

@@ -8,6 +8,6 @@ package com.query.scoring;
  *
  * @author USER
  */
-public class test {
-    
+public abstract class QueryLiveScore {
+    public abstract String getAllLiveScore();
 }
