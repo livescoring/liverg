@@ -6,11 +6,12 @@
             <file>file:/C:/Users/USER/Documents/NetBeansProjects/RythmicGymnasticScoringSystem/src/java/com/connection/DBConnect.java</file>
             <file>file:/C:/Users/USER/Documents/NetBeansProjects/RythmicGymnasticScoringSystem/src/java/com/bean/Gymnast.java</file>
             <file>file:/C:/Users/USER/Documents/NetBeansProjects/RythmicGymnasticScoringSystem/src/java/com/bean/Team.java</file>
+            <file>file:/C:/Users/USER/Documents/NetBeansProjects/RythmicGymnasticScoringSystem/src/java/com/servlet/scoring/LiveScoringServlet.java</file>
             <file>file:/C:/Users/USER/Documents/NetBeansProjects/RythmicGymnasticScoringSystem/src/java/com/bean/Apparatus.java</file>
-            <file>file:/C:/Users/USER/Documents/NetBeansProjects/RythmicGymnasticScoringSystem/src/java/com/servlet/scoring/LiveScoreServlet.java</file>
             <file>file:/C:/Users/USER/Documents/NetBeansProjects/RythmicGymnasticScoringSystem/src/java/com/dao/scoring/LiveScoreDAO.java</file>
             <file>file:/C:/Users/USER/Documents/NetBeansProjects/RythmicGymnasticScoringSystem/src/java/com/bean/Composite.java</file>
             <file>file:/C:/Users/USER/Documents/NetBeansProjects/RythmicGymnasticScoringSystem/src/java/com/bean/Score.java</file>
+            <file>file:/C:/Users/USER/Documents/NetBeansProjects/RythmicGymnasticScoringSystem/web/WEB-INF/web.xml</file>
             <file>file:/C:/Users/USER/Documents/NetBeansProjects/RythmicGymnasticScoringSystem/src/java/com/query/scoring/QueryLiveScore.java</file>
         </group>
     </open-files>

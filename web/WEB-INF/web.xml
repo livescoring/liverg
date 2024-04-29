@@ -4,8 +4,24 @@
         <servlet-name>LiveScoringServlet</servlet-name>
         <servlet-class>com.servlet.scoring.LiveScoringServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>LiveScoringByTeamNameServlet</servlet-name>
+        <servlet-class>com.servlet.scoring.LiveScoringByTeamNameServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>LiveScoringByTeamNameAndGymnastNameServlet</servlet-name>
+        <servlet-class>com.servlet.scoring.LiveScoringByTeamNameAndGymnastNameServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>LiveScoringServlet</servlet-name>
         <url-pattern>/LiveScoring</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>LiveScoringByTeamNameServlet</servlet-name>
+        <url-pattern>/LiveScoringByTeamName</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>LiveScoringByTeamNameAndGymnastNameServlet</servlet-name>
+        <url-pattern>/LiveScoringByTeamNameAndGymnastName</url-pattern>
     </servlet-mapping>
 </web-app>
