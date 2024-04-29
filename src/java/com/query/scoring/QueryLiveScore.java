@@ -10,4 +10,10 @@ package com.query.scoring;
  */
 public abstract class QueryLiveScore {
     public abstract String getAllLiveScore();
+    public abstract String getLiveScoreByTeamName();
+    public abstract String getLiveScoreByTeamNameAndGymnastName();
+     public abstract String getAllTeam();
+     public abstract String getAllGymnast();
+    
+    
 }
