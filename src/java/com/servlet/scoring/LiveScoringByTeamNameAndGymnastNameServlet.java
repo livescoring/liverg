@@ -4,7 +4,7 @@
  */
 package com.servlet.scoring;
 
-import com.bean.Composite;
+import com.scoring.bean.Composite;
 import com.dao.scoring.LiveScoreDAO;
 import java.io.IOException;
 import java.io.PrintWriter;
