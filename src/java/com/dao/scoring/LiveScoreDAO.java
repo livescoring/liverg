@@ -4,11 +4,11 @@
  */
 package com.dao.scoring;
 
-import com.bean.Apparatus;
-import com.bean.Composite;
-import com.bean.Gymnast;
-import com.bean.Score;
-import com.bean.Team;
+import com.scoring.bean.Apparatus;
+import com.scoring.bean.Composite;
+import com.scoring.bean.Gymnast;
+import com.scoring.bean.Score;
+import com.scoring.bean.Team;
 import com.connection.DBConnect;
 import com.query.scoring.QueryLiveScore;
 import java.sql.Connection;
