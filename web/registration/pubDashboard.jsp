@@ -80,7 +80,7 @@
     <div class="banner">
         <div class="navbar">
             <ul>
-                <li><a href="publicgymdetails.jsp">Gymnast Details</a></li>
+                <li><a href="publicGymDetails.jsp">Gymnast Details</a></li>
                 <li><a href="publicJudgesDetail.jsp">Judge Details</a></li>
                 <li><a href="login.jsp">Login</a></li>
             </ul>
