@@ -6,13 +6,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
   <link rel="icon" type="image/png" href="../assets/img/favicon.png">
-  <!-- Bootstrap Icons CSS -->
+  <link href="vendors/feather/feather.css" rel="stylesheet" type="text/css"/>
+  <link href="vendors/ti-icons/css/themify-icons.css" rel="stylesheet" type="text/css"/>
+  <link href="vendors/css/vendor.bundle.base.css" rel="stylesheet" type="text/css"/>
+  <link href="assets/css/vertical-layout-light/style.css" rel="stylesheet" type="text/css"/>
+<link rel="shortcut icon" href="assets/img/favicon.png" />
+  
 <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" rel="stylesheet">
 
   <title>
    Team Details
   </title>
-<!--     Fonts and icons     -->
+   <!--     Fonts and icons     -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
   <!-- Nucleo Icons -->
   <link href="assets/css/nucleo-icons.css" rel="stylesheet" type="text/css"/>
@@ -22,8 +27,8 @@
   <link href="assets/css/nucleo-svg.css" rel="stylesheet" type="text/css"/>
   <!-- CSS Files -->
   <link href="assets/css/soft-ui-dashboard.css" rel="stylesheet" type="text/css"/>
-  
-  <style>
+ 
+ <style>
 /* Sidebar styles */
 .sidenav {
   overflow-y: auto;
@@ -94,160 +99,117 @@
   background-color: #f8f9fe; /* Active icon background color */
   color: #5e72e4; /* Active icon color */
 }
+
+
+
 </style>
   
 </head>
 
-<body class="g-sidenav-show bg-gray-100">
-    
-    
-   <div class="modal fade" id="addGymnastModal" tabindex="-1" aria-labelledby="addGymnastModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="addGymnastModalLabel">Gymnast Information</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+<body>
+  <div class="container-scroller">
+    <!-- partial:../../partials/_navbar.html -->
+    <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
+      <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
+        <a class="navbar-brand brand-logo mr-5" href=""> <img src="assets/img/curved-images/sport16.jpg" class="mr-1" alt="logo"/></a>
+        <a class="navbar-brand brand-logo-mini" href=""><img src="assets/img/curved-images/gym.jpg" alt="logo"/></a>
       </div>
-      <div class="modal-body">
-        <!-- Add your form for adding judge here -->
-        <form id="addGymnastForm">
-          <div class="mb-3">
-                        <label for="exampleInputName" class="form-label">Coach Name</label>
-                        <input type="name" class="form-control" id="exampleInputName" aria-describedby="emailHelp">
-                      
-                    </div>
-                    <div class="mb-3">
-                        <label for="exampleInputPassword1" class="form-label">Coach Identity Card</label>
-                        <input type="password" class="form-control" id="exampleInputPassword1">
-                    </div>
-                    <div class="mb-3">
-                            <label for="exampleInputDuty" class="form-label">Coach Place Of Duty</label>
-                        <input type="text" class="form-control" id="exampleInputDuty">
-                    </div>
-                    <div class="mb-3">
-                        <label for="exampleInputName" class="form-label">Fisio Name</label>
-                        <input type="name" class="form-control" id="exampleInputName" aria-describedby="emailHelp">
-                      
-                    </div>
-                    <div class="mb-3">
-                        <label for="exampleInputPassword1" class="form-label">Fisio Identity Card</label>
-                        <input type="password" class="form-control" id="exampleInputPassword1">
-                    </div>
-                    <div class="mb-3">
-                            <label for="exampleInputDuty" class="form-label">Fisio Place Of Duty</label>
-                        <input type="text" class="form-control" id="exampleInputDuty">
-                    </div>          <!-- Add more form fields as needed -->
-          <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
-      </div>
-    </div>
-  </div>
-</div>
-  <aside class="sidenav navbar navbar-vertical navbar-expand-xs border-0 border-radius-xl my-3 fixed-start ms-3" id="sidenav-main">
-  <div class="sidenav-header">
-    <i class="fas fa-times p-3 cursor-pointer text-secondary opacity-5 position-absolute end-0 top-0 d-none d-xl-none" aria-hidden="true" id="iconSidenav"></i>
-    <a class="navbar-brand m-0" href="https://demos.creative-tim.com/soft-ui-dashboard/pages/dashboard.html" target="_blank">
-      <img src="assets/img/sport4.jpg" class="navbar-brand-img h-100" alt="main_logo">
-      <span class="ms-1 font-weight-bold text-black" style="color: black;">Rhythmic Dashboard</span>
-    </a>
-  </div>
-   
-  <ul class="navbar-nav">
-    <li class="nav-item">
-      <a class="nav-link active" href="dashboard.jsp">
-        <div class="icon icon-shape icon-sm shadow border-radius-md bg-gradient-primary text-white text-center me-2 d-flex align-items-center justify-content-center">
-          <i class="fas fa-tachometer-alt"></i>
-        </div>
-        <span class="nav-link-text ms-1">Dashboard</span>
-      </a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="judgesDetails.jsp">
-        <div class="icon icon-shape icon-sm shadow border-radius-md bg-gradient-info text-white text-center me-2 d-flex align-items-center justify-content-center">
-          <i class="fas fa-gavel"></i>
-        </div>
-        <span class="nav-link-text ms-1">Jury</span>
-      </a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">
-        <div class="icon icon-shape icon-sm shadow border-radius-md bg-gradient-success text-white text-center me-2 d-flex align-items-center justify-content-center">
-          <i class="fas fa-calendar-alt"></i>
-        </div>
-        <span class="nav-link-text ms-1">Event</span>
-      </a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="teamDetails.jsp">
-        <div class="icon icon-shape icon-sm shadow border-radius-md bg-gradient-warning text-white text-center me-2 d-flex align-items-center justify-content-center">
-          <i class="fas fa-users"></i>
-        </div>
-        <span class="nav-link-text ms-1">Team</span>
-      </a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="gymnastDetails.jsp">
-        <div class="icon icon-shape icon-sm shadow border-radius-md bg-gradient-danger text-white text-center me-2 d-flex align-items-center justify-content-center">
-          <i class="fas fa-dumbbell"></i>
-        </div>
-        <span class="nav-link-text ms-1">Gymnast</span>
-      </a>
-    </li>
-  </ul>
-</aside>
-
-          </aside>
-     <main class="main-content position-relative max-height-vh-100 h-100 mt-1 border-radius-lg">
-    <nav class="navbar navbar-main navbar-expand-lg px-0 mx-4 shadow-none border-radius-xl" id="navbarBlur" navbar-scroll="true">
-        <div class="container-fluid py-1 px-3">
-
-        <div class="collapse navbar-collapse mt-sm-0 mt-2 me-md-0 me-sm-4" id="navbar">
-          <div class="ms-md-auto pe-md-3 d-flex align-items-center">
-            <div class="input-group">
-              <span class="input-group-text text-body"><i class="fas fa-search" aria-hidden="true"></i></span>
-              <input type="text" class="form-control" placeholder="Type here...">
+      <div class="navbar-menu-wrapper d-flex align-items-center justify-content-end">
+        <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
+          <span class="icon-menu"></span>
+        </button>
+        
+        <ul class="navbar-nav navbar-nav-right">
+          <li class="nav-item dropdown">
+          </li>
+          <li class="nav-item nav-profile dropdown">
+            <div aria-labelledby="profileDropdown">
+              <a class="dropdown-item">
+                <i class="ti-power-off text-primary"></i>
+                Logout
+              </a>
             </div>
-          </div>
-          <ul class="navbar-nav  justify-content-end">
-            <li class="nav-item d-flex align-items-center">
-              <a href="" class="nav-link text-body font-weight-bold px-0">
-                <i class="fa fa-user me-sm-1"></i>
-                <span class="d-sm-inline d-none">Sign Out</span>
-              </a>
-            </li>
-            <li class="nav-item d-xl-none ps-3 d-flex align-items-center">
-              <a href="javascript:;" class="nav-link text-body p-0" id="iconNavbarSidenav">
-                <div class="sidenav-toggler-inner">
-                  <i class="sidenav-toggler-line"></i>
-                  <i class="sidenav-toggler-line"></i>
-                  <i class="sidenav-toggler-line"></i>
-                </div>
-              </a>
-            </li>
+          </li>
+        </ul>
 
-          </ul>
-        </div>
       </div>
     </nav>
-         
-           <section class="min-vh-100 mb-8">
+    <!-- partial -->
+    <div class="container-fluid page-body-wrapper">
+      <!-- partial:../../partials/_settings-panel.html -->
+      
+      <!-- partial:../../partials/_sidebar.html -->
+      <nav class="sidebar sidebar-offcanvas" id="sidebar">
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link" href="dashboard.jsp">
+              <i class="icon-grid menu-icon"></i>
+              <span class="menu-title">Dashboard</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="judgesDetails.jsp" aria-expanded="false" aria-controls="ui-basic">
+              <i class="icon-layout menu-icon"></i>
+              <span class="menu-title">Jury</span>
+              <i class="menu-arrow"></i>
+            </a>
+            
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#" aria-expanded="false" aria-controls="form-elements">
+              <i class="icon-columns menu-icon"></i>
+              <span class="menu-title">Event</span>
+              <i class="menu-arrow"></i>
+            </a>
+   
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="teamDetails.jsp" aria-expanded="false" aria-controls="charts">
+              <i class="icon-bar-graph menu-icon"></i>
+              <span class="menu-title">Team</span>
+              <i class="menu-arrow"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="gymnastDetails.jsp" aria-expanded="false" aria-controls="tables">
+              <i class="icon-grid-2 menu-icon"></i>
+              <span class="menu-title">Gymnast</span>
+              <i class="menu-arrow"></i>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <!-- partial -->
+      <div class="main-panel">
+        <div class="content-wrapper">
+          <section class="min-vh-100 mb-8">
     <div class="page-header align-items-start min-vh-50 pt-5 pb-11 m-3 border-radius-lg" style="background-image: url('assets/img/curved-images/sport8.jpg');">
       <span class="mask bg-gradient-dark opacity-0"></span>
       <div class="container">
         <div class="row justify-content-center">
-        
         </div>
       </div>
     </div>
-       <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gymnast Personal Information</title>
-</head>
-<body>
-    <div class="container-fluid py-4">
+
+
+              <div class="modal fade" id="errorModal" tabindex="-1" role="dialog" aria-labelledby="errorModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="errorModalLabel">Error</h5>
+      </div>
+      <div class="modal-body" id="errorMsg">
+        Please fill in all fields.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+              
+               <div class="container-fluid py-4">
        <div class="container-fluid py-4">
     <div class="row mb-3">
         <div class="col-md-6">
@@ -258,23 +220,25 @@
                     <option value="Sekolah Sukan Malaysia">Sekolah Sukan Malaysia</option>
                     <!-- Add more options if needed -->
                 </select>
-                <a href="#" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#addGymnastModal">Add</a>
+                <a href="#" class="btn btn-sm bg-gradient-dark my-4 mb-2" data-bs-toggle="modal" data-bs-target="#addGymnastModal">Add</a>
             </div>
         </div>            
     </div>
 </div>
-       <div class="row">
-    <div class="col-12">
-        <div class="card mb-4">
-            <div class="card-header pb-0">
-                <h6>Team Information</h6>
-            </div>
-            <div class="card-body px-0 pt-0 pb-2">
-                <div class="table-responsive">
-                    <table class="table align-middle mb-0">
-                        <thead>
-                            <tr>
-                                 <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7" style="color: blue !important; font-size: 0.9rem !important;">Coach Name</th>
+              
+          <div class="container-fluid py-4">
+        <div class="row">
+            <div class="col-12">
+                <div class="card mb-4">
+                    <div class="card-header pb-0">
+                         <h6>Team Information</h6>
+                    </div>
+                    <div class="card-body px-0 pt-0 pb-2">
+                        <div class="table-responsive p-0">
+                            <table class="table align-items-center mb-0">
+                                <thead>
+                                    <tr>
+                                         <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7" style="color: blue !important; font-size: 0.9rem !important;">Coach Name</th>
                                         <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7" style="color: blue !important; font-size: 0.9rem !important;">Coach Identity Card</th>
                                          <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7" style="color: blue !important; font-size: 0.9rem !important;">Coach Place Of Duty</th>
                                          <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7" style="color: blue !important; font-size: 0.9rem !important;">Fisio Name</th>
@@ -282,12 +246,13 @@
                                          <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7" style="color: blue !important; font-size: 0.9rem !important;">Fisio Place Of Duty</th>
                                         <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7" style="color: blue !important; font-size: 0.9rem !important;">Action</th>
                                         <th class="text-secondary opacity-7"></th>
-                            </tr>
-                        </thead>
-                      <tbody>
-    <tr>
-        <td>
-            <div class="d-flex px-2 py-1">
+
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <div class="d-flex px-2 py-1">
                 <div>
                     <img src="assets/img/sport4.jpg" class="avatar avatar-sm me-3" alt="user1">
                 </div>
@@ -316,26 +281,18 @@
             <p class="mb-0">Sekolah Sukan Malaysia</p>
         </td>
         
-               <td class="align-middle text-center text-sm">
+        <td class="align-middle text-center text-sm">
                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
                          <i class="bi bi-file-earmark-check-fill bi-lg"></i> <!-- Large size -->
                             </button>
                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#confirmationModal">
                                             <i class="bi bi-trash2-fill"></i> 
-                                        </button>
-                             </td>
-                                
-    </tr>
-</tbody>
-
-                    </table>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+                  </button>
+                   </td>
         
-        
+       </td>
+        </td>
+        </tr>
         <div class="modal fade" id="confirmationModal" tabindex="-1" aria-labelledby="confirmationModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
@@ -391,7 +348,7 @@
                         <input type="text" class="form-control" id="exampleInputDuty">
                     </div>
                      
-                    <button type="submit" class="btn btn-success">Submit</button>
+                    <button type="submit" class="btn btn-sm bg-gradient-dark my-4 mb-2">Submit</button>
                 </form>
             </div>
             <div class="modal-footer">
@@ -399,6 +356,50 @@
             </div>
         </div>
     </div>
+</div>
+                                
+                                
+                                 <div class="modal fade" id="addGymnastModal" tabindex="-1" aria-labelledby="addGymnastModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="addGymnastModalLabel">Gymnast Information</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <!-- Add your form for adding judge here -->
+        <form id="addGymnastForm">
+          <div class="mb-3">
+                        <label for="exampleInputName" class="form-label">Coach Name</label>
+                        <input type="name" class="form-control" id="exampleInputName" aria-describedby="emailHelp">
+                      
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Coach Identity Card</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    <div class="mb-3">
+                            <label for="exampleInputDuty" class="form-label">Coach Place Of Duty</label>
+                        <input type="text" class="form-control" id="exampleInputDuty">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputName" class="form-label">Fisio Name</label>
+                        <input type="name" class="form-control" id="exampleInputName" aria-describedby="emailHelp">
+                      
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Fisio Identity Card</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    <div class="mb-3">
+                            <label for="exampleInputDuty" class="form-label">Fisio Place Of Duty</label>
+                        <input type="text" class="form-control" id="exampleInputDuty">
+                    </div>          <!-- Add more form fields as needed -->
+          <button type="submit" class="btn btn-sm bg-gradient-dark my-4 mb-2">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
 </div>
 
 <script>
@@ -484,18 +485,19 @@
     
 </body>
 </html>
-
-
-     
-  </main>
- 
-     
   <!--   Core JS Files   -->
+  <script src="vendors/js/vendor.bundle.base.js" type="text/javascript"></script>
   <script src="assets/js/core/popper.min.js"></script>
   <script src="assets/js/core/bootstrap.min.js"></script>
   <script src="assets/js/plugins/perfect-scrollbar.min.js"></script>
   <script src="assets/js/plugins/smooth-scrollbar.min.js"></script>
+  <script src="assets/off-canvas.js" type="text/javascript"></script>
+  <script src="assets/hoverable-collapse.js" type="text/javascript"></script>
+  <script src="assets/template.js" type="text/javascript"></script>
+  <script src="assets/settings.js" type="text/javascript"></script>
+  <script src="assets/todolist.js" type="text/javascript"></script>
   <script>
+
     var win = navigator.platform.indexOf('Win') > -1;
     if (win && document.querySelector('#sidenav-scrollbar')) {
       var options = {
@@ -504,3 +506,23 @@
       Scrollbar.init(document.querySelector('#sidenav-scrollbar'), options);
     }
  
+          
+        </div>
+        <!-- content-wrapper ends -->
+        <!-- partial:../../partials/_footer.html -->
+        <footer class="footer">
+          <div class="d-sm-flex justify-content-center justify-content-sm-between">
+            <span class="text-muted text-center text-sm-left d-block d-sm-inline-block">Copyright © 2021.  Premium <a href="https://www.bootstrapdash.com/" target="_blank">Bootstrap admin template</a> from BootstrapDash. All rights reserved.</span>
+            <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">Hand-crafted & made with <i class="ti-heart text-danger ml-1"></i></span>
+          </div>
+        </footer>
+        <!-- partial -->
+      </div>
+      <!-- main-panel ends -->
+    </div>
+    <!-- page-body-wrapper ends -->
+  </div>
+  <!-- container-scroller -->
+  <!-- plugins:js -->
+  <script src="../../vendors/js/vendor.bundle.base.js"></script>
+

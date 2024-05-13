@@ -106,13 +106,12 @@
   </nav>
    
     <section class="min-vh-100 mb-8">
-    <div class="page-header align-items-start min-vh-50 pt-5 pb-11 m-3 border-radius-lg" style="background-image: url('assets/img/curved-images/sport9.png');">
+    <div class="page-header align-items-start min-vh-50 pt-5 pb-11 m-3 border-radius-lg" style="background-image: url('assets/img/curved-images/bg1.jpg');">
       <span class="mask bg-gradient-dark opacity-0"></span>
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-5 text-center mx-auto">
-            <h1 class="text-white mb-2 mt-5">Rythmic Gymnastic Scoring System</h1>
-            <p class="text-lead text-white style=font-size: 20px;">THE PLATFORM WHERE YOU CAN SHOW THE WORLD YOUR TALENTS</p>
+
           </div>
         </div>
       </div>

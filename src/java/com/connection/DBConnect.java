@@ -13,10 +13,11 @@ import java.sql.SQLException;
  * @author USER
  */
 public class DBConnect {
-    
-    public DBConnect(){}
-    
-       private String jdbcURL = "jdbc:mysql://localhost:3306/rgscoring?useSSL=false";
+
+    public DBConnect() {
+    }
+
+    private String jdbcURL = "jdbc:mysql://localhost:3306/rgscoring?useSSL=false";
     private String jdbcUsername = "root";
     private String jdbcPassword = "";
 
@@ -31,21 +32,19 @@ public class DBConnect {
     public String getJdbcPassword() {
         return jdbcPassword;
     }
-    
-     public Connection getConnection(){
-            
-            
-            Connection con = null;
-        try{
-            
+
+    public Connection getConnection() {
+        Connection con = null;
+        try {
+
             Class.forName("com.mysql.jdbc.Driver");
             con = DriverManager.getConnection(jdbcURL, jdbcUsername, jdbcPassword);
-        }catch(SQLException e){
+        } catch (SQLException e) {
             e.printStackTrace();
-        }catch(ClassNotFoundException e){
+        } catch (ClassNotFoundException e) {
             e.printStackTrace();
         }
         return con;
     }
-    
+
 }
